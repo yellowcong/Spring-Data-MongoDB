@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yellowcong.mongodb</groupId>
+  <artifactId>day08_18_mongodb</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>day08_18_mongodb</name>
+  <url>http://maven.apache.org</url>
+  
+    <repositories>  
+    <!-- 设定工厂， 这个工厂是 spring的 -->
+    <repository>
+        <id>spring-snapshots</id>
+        <name>Spring Snapshots</name>
+        <url>http://repo.spring.io/snapshot</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>  
+  </repositories> 
+  <dependencies>
+  
+  <!-- 导入注解对象 -->
+  <dependency>
+	<groupId>javax.annotation</groupId>
+	<artifactId>javax.annotation-api</artifactId>
+	<version>1.2</version>
+</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+      <scope>test</scope>
+      </dependency>
+      
+      <!-- 配置mongodb 1.7.2 释放版本 -->
+   <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-mongodb</artifactId>
+        <version>1.7.2.RELEASE</version>
+    </dependency>
+    
+	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aop</artifactId>
+		<version>4.1.6.RELEASE</version>
+	</dependency>
+	
+	<!-- Spring测试包 -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-test</artifactId>
+		<version>4.1.6.RELEASE</version>
+	</dependency>
+	
+	
+	<!-- 导入bean的 操作工具,方便操作反射 -->
+	<dependency>
+	<groupId>commons-beanutils</groupId>
+	<artifactId>commons-beanutils</artifactId>
+	<version>1.9.2</version>
+	</dependency>
+	
+		<!-- 加入log4j -->
+  	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.16</version>
+	</dependency>
+  </dependencies>
+  
+  
+</project>
