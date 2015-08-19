@@ -7,6 +7,13 @@ import org.springframework.data.mongodb.core.query.Update;
 
 import com.yellowcong.model.Pager;
 
+/**
+ * 建立公共的BaseDao接口，所有的Dao都需要继承这个类
+ * @author 狂飙のyellowcong
+ * 2015年8月19日
+ *
+ * @param <T>
+ */
 public interface BaseDao<T> {
 
     /** 

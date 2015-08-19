@@ -1,8 +1,5 @@
 package com.yellowcong.dao;
 
-import org.springframework.stereotype.Repository;
-
-import com.yellowcong.dao.impl.BaseDaoImpl;
 import com.yellowcong.model.User;
 
 /**
