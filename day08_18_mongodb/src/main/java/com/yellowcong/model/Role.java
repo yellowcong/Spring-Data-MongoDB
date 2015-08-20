@@ -1,8 +1,14 @@
 package com.yellowcong.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
 public class Role {
+	@Id
 	private int id;
 	private String name;
+
 	public int getId() {
 		return id;
 	}
